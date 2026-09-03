@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>ics-import-clh@legacy-systemes.fr</em:id>
+    <em:version>1.0.0</em:version>
+    <em:type>2</em:type>
+    <em:bootstrap>true</em:bootstrap>
+    <em:multiprocessCompatible>true</em:multiprocessCompatible>
+
+    <em:targetApplication>
+      <Description>
+        <!-- {3550f703-e582-4d05-9a08-453d09bdfdc6} = Thunderbird -->
+        <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
+        <em:minVersion>60.0</em:minVersion>
+        <em:maxVersion>60.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <em:name>ICS Import (Lightning, ligne de commande)</em:name>
+    <em:description>Intercepte un fichier .ics passé en ligne de commande (double-clic Windows), le répare/parse via Lightning, et ouvre la fenêtre d'édition d'événement pré-remplie pour validation manuelle, sans ouvrir de message.</em:description>
+    <em:creator>Legacy Systèmes</em:creator>
+    <em:homepageURL>https://leprojeteur.fr</em:homepageURL>
+  </Description>
+</RDF>
