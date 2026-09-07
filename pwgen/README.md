@@ -23,6 +23,16 @@ Extension Firefox légère (Manifest V3) pour générer et insérer des mots de 
 
 L'extension reste chargée tant que Firefox n'est pas redémarré (installation temporaire, non signée).
 
+### Installer le .xpi directement (persistant, non signé)
+
+Firefox release/ESR bloque par défaut l'installation d'un `.xpi` non signé par Mozilla. Pour tester en installation persistante sans passer par `about:debugging` :
+
+1. Aller sur `about:config`.
+2. Passer `xpinstall.signatures.required` à `false`.
+3. Ouvrir/glisser le `.xpi` dans Firefox — l'install passe normalement.
+
+⚠️ Uniquement sur Firefox Nightly / Developer Edition / ESR — ce pref n'existe pas (ou est verrouillé) sur Firefox release grand public. Et désactiver la vérification de signature désactive la protection pour **toutes** les extensions, pas que celle-ci — à remettre à `true` une fois les tests terminés.
+
 ## Structure
 
 ```
